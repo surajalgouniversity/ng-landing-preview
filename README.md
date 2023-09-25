@@ -1,8 +1,7 @@
-# React + Vite
+# Nomadic Gurukul landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is basic landing page
 
-Currently, two official plugins are available:
+Currently, hosted on github pages, and authentication with firebase:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Its Live at](![image](https://github.com/surajalgouniversity/ng-landing-preview/assets/144119496/77fd98a2-0f3d-4960-8745-2ecbfe014766)) 
