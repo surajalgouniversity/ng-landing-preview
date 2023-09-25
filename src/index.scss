@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+$dark: #904e95;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1fa2ff;
+  height: 100vh;
+  background-image: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  position: relative;
+  overflow: hidden;
+
+  .logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 5.5rem;
+    background-image: url("./assets/logo.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .hero {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("./assets/hero.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 65rem;
+    height: 62rem;
+  }
+}
+
+.main {
+  color: #ffffff;
+  text-transform: capitalize;
+  position: absolute;
+  font-size: 1.5rem;
+  line-height: 3.2rem;
+  width: 40rem;
+  left: 5.5rem;
+
+  .txt {
+    background: linear-gradient(to right, #fdc830, #f37335);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .about {
+    font-family: "Roboto", sans-serif;
+    margin: 2rem 0;
+    position: relative;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .btn {
+    position: relative;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5rem;
+    background-image: linear-gradient(to right, #fdc830, #f37335);
+    font-size: 1.2rem;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 2rem;
+    outline: none;
+    transition: background-color 2s ease;
+  }
+
+  .btn:before {
+    content: url("./assets/google.svg");
+    width: 1.2rem;
+    float: left;
+    margin-right: 0.5rem;
+    margin-top: -0.2rem;
+    outline: none;
+  }
+
+  .btn:hover {
+    background-image: linear-gradient(to right, #c79d27, #cb5f2f);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+
+    .logo {
+      top: 1rem;
+      left: 2rem;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .main {
+      position: relative;
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+    .about{
+      line-height: 1.2rem;
+    }
+
+    .hero {
+      display: none;
+    }
+  }
+}
+
